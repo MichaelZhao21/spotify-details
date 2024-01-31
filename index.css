@@ -1,0 +1,11 @@
+html, body {
+    background-color: #333;
+}
+
+p, h1, h2, h3, ul, li, label, pre {
+    color: #fff;
+}
+
+a {
+    color: #aafffe; 
+}

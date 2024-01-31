@@ -1,13 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="index.ts"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <title>My Spotify Profile</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <script src="index.ts" type="module"></script>
+        <h1>Display your Spotify profile data</h1>
+
+        <section id="profile">
+            <h2>Logged in as <span id="displayName"></span></h2>
+            <span id="avatar"></span>
+            <ul>
+                <li>User ID: <span id="id"></span></li>
+                <li>Email: <span id="email"></span></li>
+                <li>Spotify URI: <a id="uri" href="#"></a></li>
+                <li>Link: <a id="url" href="#"></a></li>
+                <li>Profile Image: <span id="imgUrl"></span></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Song Info</h2>
+            <label for="song-id">Song ID</label>
+            <input type="text" id="song-id" />
+            <button id="get-song">Get Song</button>
+            <pre id="song-info"></pre>
+        </section>
+    </body>
 </html>
